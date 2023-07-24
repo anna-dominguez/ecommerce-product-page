@@ -164,7 +164,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
       )}
       <div
         onClick={() => setFullImage(true)}
-        className="relative md:flex md:flex-col md:w-[445px] z-0"
+        className="relative md:flex md:flex-col md:max-w-[445px] z-0"
       >
         {displayedImage === 0 && (
           <Image
@@ -206,31 +206,31 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
         >
           <Image className="h-3" src={Previous} />
         </button>
-        <div className="hidden md:flex max-w-[445px] mt-8 space-x-8">
+        <div className="hidden md:flex mt-8 space-x-8">
           <Image
             onClick={() => setDisplayedImage(0)}
-            className={`cursor-pointer rounded-[15px] ${
+            className={`w-[88px] cursor-pointer rounded-[15px] ${
               displayedImage === 0 && 'border-2 border-orange opacity-40'
             } hover:opacity-40`}
             src={ThumbProduct1}
           />
           <Image
             onClick={() => setDisplayedImage(1)}
-            className={`cursor-pointer rounded-[15px] ${
+            className={`w-[88px] cursor-pointer rounded-[15px] ${
               displayedImage === 1 && 'border-2 border-orange opacity-40'
             } hover:opacity-40`}
             src={ThumbProduct2}
           />
           <Image
             onClick={() => setDisplayedImage(2)}
-            className={`cursor-pointer rounded-[15px] ${
+            className={`w-[88px] cursor-pointer rounded-[15px] ${
               displayedImage === 2 && 'border-2 border-orange opacity-40'
             } hover:opacity-40`}
             src={ThumbProduct3}
           />
           <Image
             onClick={() => setDisplayedImage(3)}
-            className={`cursor-pointer rounded-[15px] ${
+            className={`w-[88px] cursor-pointer rounded-[15px] ${
               displayedImage === 3 && 'border-2 border-orange opacity-40'
             } hover:opacity-40`}
             src={ThumbProduct4}
