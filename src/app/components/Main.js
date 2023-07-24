@@ -167,7 +167,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
           <Image
             onClick={() => setFullImage(true)}
             alt="Picture Basket"
-            className="h-[300px] md:h-[445px] md:rounded-[15px]"
+            className="h-[300px] md:h-[445px] md:rounded-[15px] cursor-pointer"
             src={Product1}
           />
         )}
@@ -175,7 +175,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
           <Image
             onClick={() => setFullImage(true)}
             alt="Picture Basket"
-            className="h-[300px] md:h-fit md:rounded-[15px]"
+            className="h-[300px] md:h-fit md:rounded-[15px] cursor-pointer"
             src={Product2}
           />
         )}
@@ -183,7 +183,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
           <Image
             onClick={() => setFullImage(true)}
             alt="Picture Basket"
-            className="h-[300px] md:h-fit md:rounded-[15px]"
+            className="h-[300px] md:h-fit md:rounded-[15px] cursor-pointer"
             src={Product3}
           />
         )}
@@ -191,7 +191,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
           <Image
             onClick={() => setFullImage(true)}
             alt="Picture Basket"
-            className="h-[300px] md:h-fit md:rounded-[15px]"
+            className="h-[300px] md:h-fit md:rounded-[15px] cursor-pointer"
             src={Product4}
           />
         )}
