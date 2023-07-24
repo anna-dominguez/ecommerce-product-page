@@ -162,12 +162,10 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
           )}
         </div>
       )}
-      <div
-        onClick={() => setFullImage(true)}
-        className="relative md:flex md:flex-col md:max-w-[445px] z-0"
-      >
+      <div className="relative md:flex md:flex-col md:max-w-[445px] z-0">
         {displayedImage === 0 && (
           <Image
+            onClick={() => setFullImage(true)}
             alt="Picture Basket"
             className="h-[300px] md:h-[445px] md:rounded-[15px]"
             src={Product1}
@@ -175,6 +173,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
         )}
         {displayedImage === 1 && (
           <Image
+            onClick={() => setFullImage(true)}
             alt="Picture Basket"
             className="h-[300px] md:h-fit md:rounded-[15px]"
             src={Product2}
@@ -182,6 +181,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
         )}
         {displayedImage === 2 && (
           <Image
+            onClick={() => setFullImage(true)}
             alt="Picture Basket"
             className="h-[300px] md:h-fit md:rounded-[15px]"
             src={Product3}
@@ -189,6 +189,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
         )}
         {displayedImage === 3 && (
           <Image
+            onClick={() => setFullImage(true)}
             alt="Picture Basket"
             className="h-[300px] md:h-fit md:rounded-[15px]"
             src={Product4}
