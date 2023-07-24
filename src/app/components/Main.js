@@ -122,7 +122,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
 
   return (
     <main
-      className={`flex relative flex-col md:flex-row md:justify-between pb-12 md:py-20 md:px-52 md:m-auto z-0`}
+      className={`flex relative flex-col md:flex-row md:justify-between md:items-center pb-12 md:py-20 md:px-52 md:m-auto z-0`}
     >
       {fullImage && (
         <Modal
@@ -132,10 +132,10 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
         />
       )}
       {isCartOpen && (
-        <div className="self-center md:self-end shadow-md absolute m-3 md:m-0 md:-top-2 md:-right-20 w-[95%] md:w-[360px] bg-white rounded-[10px] z-0">
+        <div className="self-center md:self-end shadow-md absolute m-3 md:m-0 md:-top-2 md:-right-20 w-[95%] md:w-[360px] bg-white rounded-[10px] z-50">
           <p className="p-6 border-b border-grey/50">Cart</p>
           {sneakersInCart ? (
-            <div className="flex flex-col pb-4">
+            <div className="flex flex-col pb-4 z-50">
               <div className="p-6 flex space-x-2 justify-between items-center">
                 <Image className="w-[50px] rounded-[4px]" src={ThumbProduct1} />
                 <div>
@@ -237,14 +237,14 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
           />
         </div>
       </div>
-      <div className="m-6 space-y-4 md:w-[445px] text-darkBlue z-0">
-        <h1 className="text-bodyXS text-orange uppercase tracking-[1.85px]">
+      <div className="m-6 space-y-4 md:space-y-6 md:w-[445px] text-darkBlue z-0">
+        <h1 className="text-bodyXS md:text-bodyM text-orange uppercase tracking-[1.85px]">
           Sneaker Company
         </h1>
-        <h2 className="text-headingS leading-9">
+        <h2 className="text-headingS md:text-[44px] leading-9">
           Fall Limited Edition Sneakers
         </h2>
-        <p className="bodyS text-blueGrey">
+        <p className="bodyS md:text-bodyM md:py-2 text-blueGrey">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
@@ -258,7 +258,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
           </div>
           <p className="text-grey line-through">$250.00</p>
         </div>
-        <div className="md:grid md:grid-cols-3 md:space-x-4">
+        <div className="md:grid md:grid-cols-3 md:space-x-4 md:content-stretch">
           <div className="bg-[#F6F8FD] flex justify-between p-4 mb-4 items-center rounded-[10px]">
             <button
               onClick={() => handleNbSneakers(-1)}

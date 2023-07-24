@@ -14,7 +14,7 @@ const Header = ({ openCart, sneakersInCart }) => {
 
   return (
     <header
-      className={`p-6 md:w-[75%] md:m-auto md:p-0 md:border-b md:border-grey/50 flex items-center justify-between ${
+      className={`p-6 md:w-[75%] md:py-6 md:m-auto md:p-0 md:border-b md:border-grey/50 flex items-center justify-between ${
         openMenu && 'h-full'
       }`}
     >

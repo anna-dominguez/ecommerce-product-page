@@ -14,6 +14,7 @@ module.exports = {
       grey: '#B6BCC8',
     },
     fontSize: {
+      bodyM: ['16px', '26px'],
       bodyS: ['15px', '25px'],
       bodyXS: '12px',
       headingS: '28px',
