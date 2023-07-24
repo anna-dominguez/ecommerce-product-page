@@ -206,7 +206,7 @@ const Main = ({ isCartOpen, sneakersInCart, setSneakersInCart }) => {
         >
           <Image className="h-3" src={Previous} />
         </button>
-        <div className="hidden md:flex w-[445px] mt-8 space-x-8">
+        <div className="hidden md:flex max-w-[445px] mt-8 space-x-8">
           <Image
             onClick={() => setDisplayedImage(0)}
             className={`cursor-pointer rounded-[15px] ${
